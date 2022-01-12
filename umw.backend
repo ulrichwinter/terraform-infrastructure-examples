@@ -1,0 +1,3 @@
+bucket         = "umw-tfstate"
+key            = "umw.tfstate"
+dynamodb_table = "umw-tflock"
