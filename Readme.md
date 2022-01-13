@@ -7,3 +7,7 @@
   Specify a Partition key named `LockID` of type String.
 * Execute `ENV=umw make init`
 * Execute `ENV=umw make apply`
+
+## Examples
+*  [Activate the AWS Config recorder with conformance packs](conformance.tf)
+ 
