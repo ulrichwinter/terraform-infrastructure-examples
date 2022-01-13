@@ -161,6 +161,10 @@ resource "aws_config_configuration_recorder_status" "config_recorder_status" {
 
 # -----------------------------------------------------------
 # set up the Conformance Pack
+# All files in folder "conformance-packs" named
+# "Operational-Best-Practices-for-*.yaml" are deployed.
+# For more conformance packs, see:
+# https://github.com/awslabs/aws-config-rules/tree/master/aws-config-conformance-packs
 # -----------------------------------------------------------
 resource "aws_config_conformance_pack" "this" {
   for_each = fileset("${path.module}/conformance-packs", "Operational-Best-Practices-for-*.yaml")
